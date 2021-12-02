@@ -11,7 +11,7 @@
 
     <!-- Header -->
     <header>
-      <h1>XSS Demo</h1>
+      <h1>BITS Assignment XSS Demo</h1>
     </header>
 
     <!-- Write form -->
@@ -20,13 +20,11 @@
               placeholder="Comment" autocomplete="off" />
       <input type="submit" value="Submit" />
     </form>
-    <!-- Search form -->
     <form method="GET">
       <input type="text" name="q" 
              placeholder="Search" autocomplete="off" />
       <input type="submit" value="Filter comments" />
     </form>
-    <!-- Comments -->
     {% if not search_query %}
       <h3>Showing all entries:</h3>
     {% else %}
